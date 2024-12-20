@@ -86,6 +86,7 @@ export function SocialBeam({ className }: { className?: string }) {
 				</div>
 				{socials.map((social, i) => (
 					<AnimatedBeam
+						key={i}
 						containerRef={containerRef}
 						fromRef={refList[i]}
 						toRef={div6Ref}
