@@ -8,7 +8,7 @@ const TextStroke = ({ title }: { title: string }) => {
 	return (
 		<motion.h2
 			style={{ x }}
-			className="absolute text-[100px] top-[-30px] left-[-190px] lg:text-[200px] lg:top-[-130px] lg:left-[-100px] font-kanit font-bold text-center text-red-400 text-stroke select-none"
+			className="absolute z-[-1] text-[100px] top-[-30px] left-[-190px] lg:text-[200px] lg:top-[-130px] lg:left-[-100px] font-kanit font-bold text-center text-red-400 text-stroke select-none"
 		>
 			{title}
 		</motion.h2>

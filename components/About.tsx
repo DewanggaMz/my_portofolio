@@ -53,7 +53,7 @@ const About = () => {
 	return (
 		<section
 			id="about"
-			className="relative pt-28 pb-20 px-4 lg:px-10"
+			className="relative pt-28 pb-5 px-4 lg:px-10"
 			ref={aboutRef}
 		>
 			<h2 className="text-3xl lg:text-5xl font-kanit font-bold text-center mb-10">
@@ -91,10 +91,18 @@ const About = () => {
 						<div>Entrepreneur</div>
 					</div>
 					<p className="text-justify font-kanit tracking-wide lg:tracking-normal">
-						Hello, my name is dewangga, and I am a Fullstack Developer with a
-						strong commitment to continuous learning and growth. While I am at
-						the beginning of my career, I am driven by a passion for technology
-						and a determination to create impactful solutions.
+						Hi! I’m dewangga, a self-taught programmer with a passion for
+						solving problems and building innovative solutions. My journey in
+						programming started out of curiosity, and over the years, I’ve honed
+						my skills through countless hours of practice, exploration, and
+						hands-on projects.
+						<br />
+						<br />
+						I specialize in web development and IoT systems, bridging the gap
+						between software and hardware to create meaningful, impactful
+						solutions. From writing clean, efficient code to designing systems
+						that improve everyday life, I’m always eager to take on new
+						challenges and grow as a developer.
 						<br />
 						<br />I believe that technology is a powerful tool for solving
 						real-world problems, fostering connections, and improving lives.

@@ -52,48 +52,46 @@ export function SocialBeam({ className }: { className?: string }) {
 	}
 
 	return (
-		<TooltipProvider>
-			<div
-				className={cn(
-					"relative flex w-full lg:w-1/2 items-center justify-center overflow-hidden rounded-lg  ",
-					className
-				)}
-				ref={containerRef}
-			>
-				<div className="flex size-full flex-row items-stretch justify-between gap-10 max-w-lg">
-					<div className="flex flex-col justify-center gap-8">
-						{socials.map((social, i) => (
-							<Tooltip key={i}>
-								<TooltipTrigger className="z-10">
-									<Circle ref={refList[i]} href={social.href}>
-										{icon[social.icon]}
-									</Circle>
-								</TooltipTrigger>
-								<TooltipContent>{social.name}</TooltipContent>
-							</Tooltip>
-						))}
-					</div>
-					<div className="flex flex-col justify-center">
-						<Tooltip>
+		<div
+			className={cn(
+				"relative flex w-full lg:w-1/2 items-center justify-center overflow-hidden rounded-lg  ",
+				className
+			)}
+			ref={containerRef}
+		>
+			<div className="flex size-full flex-row items-stretch justify-between gap-10 max-w-lg">
+				<div className="flex flex-col justify-center gap-8">
+					{socials.map((social, i) => (
+						<Tooltip key={i}>
 							<TooltipTrigger className="z-10">
-								<Circle ref={div6Ref} className="size-16" href="/">
-									<Icons.user />
+								<Circle ref={refList[i]} href={social.href}>
+									{icon[social.icon]}
 								</Circle>
 							</TooltipTrigger>
-							<TooltipContent>Dewangga</TooltipContent>
+							<TooltipContent>{social.name}</TooltipContent>
 						</Tooltip>
-					</div>
+					))}
 				</div>
-				{socials.map((social, i) => (
-					<AnimatedBeam
-						key={i}
-						containerRef={containerRef}
-						fromRef={refList[i]}
-						toRef={div6Ref}
-						startYOffset={-4}
-					/>
-				))}
+				<div className="flex flex-col justify-center">
+					<Tooltip>
+						<TooltipTrigger className="z-10">
+							<Circle ref={div6Ref} className="size-16" href="/">
+								<Icons.user />
+							</Circle>
+						</TooltipTrigger>
+						<TooltipContent>Dewangga</TooltipContent>
+					</Tooltip>
+				</div>
 			</div>
-		</TooltipProvider>
+			{socials.map((social, i) => (
+				<AnimatedBeam
+					key={i}
+					containerRef={containerRef}
+					fromRef={refList[i]}
+					toRef={div6Ref}
+					startYOffset={-4}
+				/>
+			))}
+		</div>
 	)
 }
