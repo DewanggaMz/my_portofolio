@@ -6,8 +6,8 @@ import TextStroke from "./ui/TextStroke"
 
 const Projects = () => {
 	return (
-		<section id="skils" className="relative px-4">
-			<h2 className="text-5xl font-kanit font-bold text-center mb-10">
+		<section id="projects" className="relative px-4">
+			<h2 className="text-3xl lg:text-5xl font-kanit font-bold text-center mb-10">
 				Projects
 			</h2>
 			<TextStroke title="Projects" />

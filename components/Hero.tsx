@@ -8,6 +8,7 @@ import WordFadeIn from "./ui/word-fade-in"
 import { RainbowButton } from "./ui/rainbow-button"
 import { AnimatePresence, motion } from "framer-motion"
 import Link from "next/link"
+import { Icons } from "@/data/icons"
 
 const Hero = () => {
 	return (
@@ -46,7 +47,7 @@ const Hero = () => {
 								word="Welcome to my portofolio"
 								className="text-sm font-semibold uppercase font-kanit dark:text-green-100"
 							/>
-							<div className="md:max-w-[78%] xl:max-w-[62%] flex flex-col">
+							<div className="md:max-w-[78%] xl:max-w-[68%] flex flex-col">
 								<WordFadeIn words="Developing for the web optimizing for the world" />
 							</div>
 							<motion.div
@@ -55,7 +56,10 @@ const Hero = () => {
 								transition={{ duration: 1.3, delay: 1.3 }}
 							>
 								<Link href={"https://github.com/DewanggaMz"} target="_blank">
-									<RainbowButton>Github</RainbowButton>
+									<RainbowButton>
+										<Icons.github fill="#fff" className="h-5 w-5 mr-3" />
+										Github
+									</RainbowButton>
 								</Link>
 							</motion.div>
 						</div>
